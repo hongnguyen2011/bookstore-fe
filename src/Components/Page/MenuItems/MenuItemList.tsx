@@ -8,6 +8,7 @@ function MenuItemList() {
 
   useEffect(() => {
     fetch("https://redmangoapi.azurewebsites.net/api/MenuItem")
+      // fetch("https://localhost:7174/api/Books")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
